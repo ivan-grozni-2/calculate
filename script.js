@@ -16,6 +16,7 @@ buttons.forEach(button => {
     if (value === '=') {
       try {
         const result = eval(currentInput);
+        console.log(result);
         display.textContent = result;
         currentInput = result.toString();
         resultDisplayed = true;
